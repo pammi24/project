@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url('https://img.freepik.com/free-vector/realistic-neon-lights-background_23-2148907367.jpg');">
+    <h1>Image Gallery</h1>
+    <div class="gallery">
+        <a href="images/mee.jpeg"><img src="images/mee.jpeg" alt="me"></a>
+        <a href="images/chhotimummy.jpeg"><img src="images/chhotimummy.jpeg" alt="chhotimummy"></a>
+        <a href="images/didi.jpeg"><img src="images/didi.jpeg" alt="didi"></a>
+        <a href="images/keerti.jpeg"><img src="images/keerti.jpeg" alt="keerti"></a>
+        <a href="images/mayuri.jpeg"><img src="images/mayuri.jpeg" alt="mayuri"></a>
+        <a href="images/pandey.jpeg"><img src="images/pandey.jpeg" alt="pandey"></a>
+        <a href="images/wheather.jpeg"><img src="images/wheather.jpeg" alt="wheather"></a>
+    </div>
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content">
+        <div id="caption"></div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
